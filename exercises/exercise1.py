@@ -10,6 +10,9 @@ lado_cuadrado = 5
 
 # COMPLETAR - INICIO
 
+area_cuadrado = lado_cuadrado * lado_cuadrado
+print(f"El area del cuadrado es: {area_cuadrado}")
+
 # COMPLETAR - FIN
 
 assert area_cuadrado == 25
@@ -22,6 +25,10 @@ Re-Escribir usando el operador de potencia.
 lado_cuadrado = 5
 
 # COMPLETAR - INICIO
+
+area_cuadrado_pow = lado_cuadrado ** 2
+
+print(f"El area del cuadrado usando potencias es: {area_cuadrado_pow}")
 
 # COMPLETAR - FIN
 
