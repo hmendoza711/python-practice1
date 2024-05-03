@@ -42,6 +42,8 @@ Re-Escribir usando la función pow.
 lado_cuadrado = 5
 
 # COMPLETAR - INICIO
+area_cuadrado = pow(lado_cuadrado,2)
+print(f"El area del cuadrado usando pow es: {area_cuadrado}")
 
 # COMPLETAR - FIN
 
@@ -57,7 +59,8 @@ precio = 3.74
 presupuesto_disponible = 10
 
 # COMPLETAR - INICIO
-
+cantidad_a_comprar = presupuesto_disponible // precio
+print(f"La cantidad a comprar es: {cantidad_a_comprar}")
 # COMPLETAR - FIN
 
 assert cantidad_a_comprar == 2
@@ -71,7 +74,8 @@ Restricción: Usar el operador módulo.
 numero_incalculable = 2 ** 54 - 1
 
 # COMPLETAR - INICIO
-
+es_divisible_por_siete = numero_incalculable % 7
+print(f"El resultado es: {es_divisible_por_siete}")
 # COMPLETAR - FIN
 
 assert es_divisible_por_siete
