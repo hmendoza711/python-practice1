@@ -6,7 +6,14 @@ Restricción: Utilizar el método append
 """
 
 # COMPLETAR - INICIO
-lista_01 = 
+lista_01 = []
+
+lista_01.append("Hector")
+lista_01.append(31)
+lista_01.append("Developer Programming")
+lista_01.append("Boca Juniors")
+
+print(lista_01)
 # COMPLETAR - FIN
 
 assert len(lista_01) == 4
@@ -20,7 +27,8 @@ Restricción: Utilizar el método pop
 lista = ["ho", "la", 81, 6, 42, "como", "estas?"]
 
 # COMPLETAR - INICIO
-
+elemento_extraido = lista.pop(3)
+print(f"El 4to elemento es: {elemento_extraido}")
 # COMPLETAR - FIN
 
 assert elemento_extraido == 6
@@ -36,6 +44,14 @@ lista_b = ["4", "5", "6"]
 lista_c = ["siete", "ocho", "nueve"]
 
 # COMPLETAR - INICIO
+
+listas_concatenadas_01 = []
+listas_concatenadas_01.extend(lista_a)
+listas_concatenadas_01.extend(lista_b)
+listas_concatenadas_01.extend(lista_c)
+
+print(f"Listas concatenadas usando metodo extend: {listas_concatenadas_01}")
+
 
 # COMPLETAR - FIN
 
