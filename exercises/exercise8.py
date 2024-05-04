@@ -11,6 +11,14 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Compras = ["cafetera", "TV 50 pulgadas", "mouse gamer"]
+Cliente = {
+    'Nombre':"Mario Pedernera",
+    'DNI' : 56895632,
+    'Domicilio' : "Los alamos 4509",
+    'Compras' : Compras
+}
+
 # COMPLETAR - FIN
 
 assert (
@@ -30,10 +38,16 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 
 # COMPLETAR - INICIO
 
+Compras = {
+    'Mario Pedernera' : ["cafetera", "TV 50 pulgadas", "mouse gamer"],
+    'Ezequiel Castello' : ["ipad", "ipod", "iphone"],
+    'Pablo Piristrelli' : ["Reproductor de CD", "Videograbadora"]
+}
+
 # COMPLETAR - FIN
 
 assert (
-    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
+    (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
     and (Compras["Ezequiel Castello"] == ["ipad", "ipod", "iphone"])
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
@@ -52,6 +66,9 @@ diccionario = {
 }
 
 # COMPLETAR - INICIO
+
+clave1 = diccionario.get("clave1")
+print(clave1)
 
 # COMPLETAR - FIN
 
@@ -73,6 +90,11 @@ diccionario_2 = {
 
 # COMPLETAR - INICIO
 
+clave5 = diccionario_2.get("clave5",5)
+print(clave5)
+clave6 = diccionario_2.get("clave5",6)
+print(clave6)
+
 # COMPLETAR - FIN
 
 assert clave5 == 5
@@ -90,6 +112,9 @@ diccionario_3 = {
 }
 
 # COMPLETAR - INICIO
+
+keys = list(diccionario_2.keys())
+print(keys)
 
 # COMPLETAR - FIN
 
@@ -109,6 +134,9 @@ diccionario_4 = {
 
 # COMPLETAR - INICIO
 
+values = list(diccionario_4.values())
+print(values)
+
 # COMPLETAR - FIN
 
 assert values == [1234, 4567, 8910, 1112]
@@ -127,6 +155,9 @@ diccionario_5 = {
 }
 
 # COMPLETAR - INICIO
+
+items = list(diccionario_5.items())
+print(items)
 
 # COMPLETAR - FIN
 
@@ -152,6 +183,9 @@ diccionario_7 = {
 }
 
 # COMPLETAR - INICIO
+
+diccionario_6.update(diccionario_7.items())
+print(diccionario_6)
 
 # COMPLETAR - FIN
 
